@@ -1,0 +1,375 @@
+/* global css start from here  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+button{
+
+    background-color: #C22142;
+    border:2px solid #C22142;
+    color: white;
+    padding: 15px 25px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+/* button:hover{
+    
+} */
+/* global css end here  */
+header{
+    padding: 20px;
+}
+.wrapper{
+    width: 75%;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+.logo{
+    width: 12%;
+
+    float: left;/* margin-right: 30px; */
+}
+.logo img{
+    width: 100%;
+}
+nav{
+    width: 96%;
+    margin-top: 8px;
+
+}
+nav ul{
+    list-style-type: none;
+    float: right;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: inline-block;
+    font-weight: 600px;
+    text-decoration: none;
+    color: #6C6C6C;
+    text-transform: capitalize;
+    padding: 0 16px;
+    transition: all 0.4s ease;
+    
+}
+nav ul li a:hover{
+    color: #AF6D77;
+}
+
+/* global css end here  */
+
+/* banner seciton start from here  */
+#banner{
+
+    background-image:linear-gradient(#00000099,#00000050), url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.banner-wrapper{
+    overflow: none;
+}
+.content{
+    margin-top: 20px;
+    width: 50%;
+}
+.content-text{
+    color: aliceblue;
+    text-transform: capitalize;
+    
+}
+.content-text h1{
+    font-size: 45px;
+    line-height: 62px;
+
+}
+.content-text p{
+    line-height: 30px;
+    margin:20px 0;
+}
+/* banner responsive */
+
+@media only screen and (max-width: 600px) {
+    
+  }
+
+/* service section start from here//============= */
+
+#service{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.service-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.service-header h1{
+    color: #0c0b0b;
+    line-height: 62px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.service-header p{
+    color: #C1C1C1;
+    line-height: 30px;
+}
+
+/* main service area css start from here  */
+#main-service{
+    margin-top: 50px;
+}
+.main-service-content{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+}
+.service-content{
+    width: 20%;
+    text-align: center;
+
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #535D69;
+    border: 6px solid #85A4C1 ;
+    outline: 5px solid #88A2BD;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.icon2{
+    background-color:#BC233F;
+    border: 6px solid #BC3D58 ;
+    outline: 5px solid #ED98AB;
+}
+.text h5{
+    color: #0c0b0b;
+}
+
+/* learning process area start from here  */
+
+#process{
+    background-color: #FAFAFA;
+    margin-top: 100px;
+    padding: 50px 0;
+
+}
+.learning-process{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 60vh;
+    
+}
+.left-area{
+    width: 50%;
+    margin-top: 50px;
+    
+}
+.left-area h1{
+    color: #131313;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 42px;
+    margin-bottom: 5px;
+}
+.left-area p{
+    color: #C1C1C1;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.right-area{
+    width: 50%;
+    margin-top: 65px;
+    /* margin-left: 30px; */
+}
+
+
+/* main feature section start from here // */
+
+#feature{
+    margin-top: 30px;
+}
+.feature-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.feature-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature-col{
+    width: 270px;
+    min-height: 250px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.feature-col:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.feature-col h3{
+    font-size: 17px;
+    color: #131313;
+    margin-top: 15px;
+}
+.feature-col i{
+
+    margin-top: 15px;
+}
+.feature-col:hover i{
+    color: #BC233F
+}
+.feature-col p{
+    color: #C1C1C1;
+    margin-top: 15px;
+}
+
+/* extra feature link//0 */
+.link{
+    text-align: center;
+    margin-top: 50px;
+    
+
+}
+.link a{
+    color: #BC233F;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+}
+
+/* fotter area start from here//---------- */
+footer{
+    background-color: #0c0b0b;
+    height: 55vh;
+    margin-top: 100px;
+}
+.fotter-area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-content{
+    width: 25%;
+    margin-right: 37px;
+}
+address span{
+    display: block;
+    color: #535D69;
+    margin-top: 20px;
+}
+address span i{
+    color: #BC233F;
+    margin-right: 10px;
+    
+}
+.fotter-heading{
+    color: #BC233F;
+    /* font-size: 25px; */
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.social-link{
+    margin-top: 30px;
+}
+.social-link ul{
+    display: flex;
+}
+.social-link ul li{
+    list-style: none;
+    margin-right: 15px;
+}
+.social-link ul li  a{
+    text-decoration: none;
+    padding: 2px 3px;
+    background-color: #eff3f8;
+    color: #3b2f2f;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+}
+.social-link ul li a:hover{
+    background-color: #BC233F;
+    color: white;
+
+}
+
+/* use ful links */
+
+.useful-link{
+    margin-right: 30px;
+}
+
+.useful-link ul{
+    margin-right: ;
+}
+.useful-link ul li{
+    list-style: none;
+    margin-bottom: 10px;
+
+}
+.useful-link ul li  a{
+    text-decoration: none;
+    padding: 2px 3px;
+    color: #535D69;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.6s ease;
+}
+.useful-link ul li a i{
+    margin-right: 10px;
+}
+.useful-link ul li a:hover{
+    color: #BC233F;
+}
+.useful-link ul li a:hover i{
+    color: #BC233F;
+}
+
+.newletter-content{
+
+}
+.newletter-content p{
+    color: #535D69;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+}
+input{
+    border: 1px solid #525d56;
+    height: 40px;
+
+}
+form button{
+    padding: 10px 20px;
+}
+form button:focus{
+    border: none;
+    outline: none;
+}
